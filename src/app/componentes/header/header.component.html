@@ -1,0 +1,26 @@
+<div class="container mt-5">
+    <div class="row">
+        <h1 class="text-center montserrat">TODO
+            <div cdkDropList (cdkDropListDropped)="drop($event)">
+                <div class="example-box" *ngFor="let movie of movies" cdkDrag>{{movie}}</div>
+              </div>
+        </h1>
+    </div>
+
+    <div cdkDropList (cdkDropListDropped)="drop($event)">
+        <div class="example-box" *ngFor="let movie of movies" cdkDrag>{{movie}}</div>
+      </div>
+</div>
+
+<div class="example-box" cdkDrag>
+    Drag me around
+  </div>
+  <div class="example-box" cdkDrag>
+    Drag me around
+  </div>
+
+  <h2 class="cdkDragnpm i"><div class="example-box" cdkDrag>
+    Drag me around
+  </div>
+<p>Esto es un parrafo Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates similique, animi sint doloribus excepturi et ullam sit eligendi saepe exercitationem veritatis quis debitis omnis cupiditate incidunt vero inventore suscipit libero?</p></h2>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore minima reiciendis doloremque eligendi corporis nam rerum, est impedit nesciunt. Eos quibusdam maiores mollitia eius vel blanditiis rem cupiditate, quis quidem.</p>
